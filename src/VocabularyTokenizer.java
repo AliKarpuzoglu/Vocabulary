@@ -1,13 +1,14 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class VocabularyTokenizer {
+public class VocabularyTokenizer extends IO_Class {
     
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Scanner scanner2 = new Scanner(System.in);
 
-        System.out.println("How many Files do you want to read? \nenter a fucking number, retard");
+        System.out.println("How many Files do you want to read?");
         int size = scanner.nextInt();
 //        String[] paths = new String[size];
         File[] files = new File[size];
@@ -43,7 +44,7 @@ public class VocabularyTokenizer {
         
     }
     
-//        String[] result = "penis penis".split("\\s");
+//        String[] result = "Ali Ali".split("\\s");
 //        for (int x=0; x<result.length; x++)
 //            System.out.println(result[x]);
 //    }
