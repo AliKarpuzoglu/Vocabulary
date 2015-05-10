@@ -16,6 +16,7 @@ public class IO_Class {
         
         Filename = filename;
     }
+    
     public void initializeReader() {
         try {
             this.br = new BufferedReader(new FileReader(Filename));
@@ -36,7 +37,6 @@ public class IO_Class {
             filewr = new FileWriter(Filename);
             this.bw = new BufferedWriter(filewr);
         } catch (IOException e) {
-            
             e.printStackTrace();
         }
         
