@@ -43,7 +43,7 @@ public class Tokenizer extends IO_Class {
             Arrays.sort(shortened);
             
         for(int i = 0; i<Word.pointer;i++){
-            bw.write(shortened[i].toString());
+            bw.write(i+". " +shortened[i].toString());
         }
         }catch(IOException e){
             System.out.println("Error");
